@@ -3,3 +3,8 @@
 # максимальным и минимальным значением дробной части элементов.
 #  Пример:
 # [1.1, 1.2, 3.1, 5, 10.01] => 0.19
+spk = [1.1, 1.2, 3.1, 5, 10.01]
+num_min = min(spk)
+num_max = max(spk)
+res = abs((num_min - int(num_min)) - (num_max - int(num_max)))
+print(f'{res:.2f}')
