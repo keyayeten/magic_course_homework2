@@ -2,8 +2,7 @@
 # количество встречаемых слов и вернуть 10 самых частых.
 # Не учитывать знаки препинания и регистр символов.
 
-text = input().lower().replace('.', '').replace(',', '').replace('!', '')
-text = text.replace('?', '').replace(';', '').replace(':', '').split()
+text = input().lower().replace('.,:;!@#$%^&*(){["]}\|/><', '').split()
 
 text_spk = {}
 for i in text:
